@@ -1,0 +1,10 @@
+/* สไตล์เพิ่มเติมสำหรับเวอร์ชัน React (ต่อจาก styles.css ที่ยกมาจากต้นแบบ) */
+html, body, #app { height: 100%; }
+.req-photos img, .unit-thumb { object-fit: cover; }
+.photo-picks { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.photo-picks .pp { position: relative; }
+.photo-picks .pp img { width: 72px; height: 72px; object-fit: cover; border-radius: 8px; border: 1px solid var(--line); }
+.photo-picks .pp button { position: absolute; top: -6px; right: -6px; width: 20px; height: 20px; border-radius: 50%; border: none; background: var(--danger); color: #fff; font-size: 11px; line-height: 20px; padding: 0; }
+.qr-box { display: grid; place-items: center; gap: 8px; text-align: center; }
+.qr-box img { width: 240px; height: 240px; image-rendering: pixelated; background: #fff; padding: 8px; border-radius: 8px; }
+@media print { .topbar, .rail, .mobile-nav, .update-bar, .no-print { display: none !important; } .modal-backdrop { position: static; background: none; } }
